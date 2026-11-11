@@ -4,7 +4,7 @@ Projeto desenvolvido para o desafio da **DIO** com **Python**, **Google Agent De
 
 Baseado no [exemplo do desafio (agents/agent04)](https://github.com/digitalinnovationone/agent-carbon-footprint/tree/main/agents/agent04), com melhorias na organização do código, normalização dos status e tratamento de erros.
 
-> **Estado atual:** código publicado e lógica local preparada para testes. A integração real com as contas Trello/Gemini **ainda não foi validada**; as capturas do `adk web` e do quadro devem ser adicionadas após a execução. Não confunda testes unitários com testes de integração.
+> **Estado atual:** integração real com Gemini e Trello **validada pelo usuário em 11/11/2026**, com capturas de tela do ADK Web e do quadro Trello. Os prints ainda precisam ser enviados à pasta `evidencias/` deste repositório.
 
 ## Objetivo
 
@@ -102,7 +102,7 @@ Execute estas ações com o agente e confira o quadro:
 5. **Concluir:** “Concluí estudar Python.” — testa normalização de acento.
 6. **Remover:** “Remova estudar Python.” — deve solicitar confirmação antes de excluir.
 
-Essas frases são **casos de teste sugeridos**, não comprovações de execução nas APIs.
+**Resultados observados em 11/11/2026:** a conversa no ADK mostrou execução de `get_temporal_context`, `adicionar_tarefa`, `mudar_status_tarefa` e `listar_tarefas`, com respostas de sucesso. O quadro Trello exibiu o card **Estudar Python** na lista **Concluído**, com vencimento em **11/11/2026**. Foram testadas a criação, a movimentação para **Em andamento** e depois **Concluído**, e a listagem por status. A ferramenta de exclusão **não foi testada**.
 
 ### Testes automatizados de lógica
 
@@ -119,7 +119,7 @@ Após testar no ambiente real, coloque prints em [`evidencias/`](evidencias/READ
 - Chat do `adk web` com criação/movimentação de tarefa.
 - Quadro Trello com o card aparecendo nas listas.
 
-**As evidências de integração ainda estão pendentes.** Evite incluir dados privados nos prints.
+**A execução real foi confirmada visualmente pelas capturas enviadas pelo usuário.** Falta apenas anexar os dois arquivos de imagem nesta pasta do GitHub. Evite incluir dados privados nos prints.
 
 ## Arquivos do projeto
 
