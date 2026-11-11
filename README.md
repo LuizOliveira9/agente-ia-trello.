@@ -4,7 +4,7 @@ Projeto desenvolvido para o desafio da **DIO** com **Python**, **Google Agent De
 
 Baseado no [exemplo do desafio (agents/agent04)](https://github.com/digitalinnovationone/agent-carbon-footprint/tree/main/agents/agent04), com melhorias na organização do código, normalização dos status e tratamento de erros.
 
-> **Estado atual:** integração real com Gemini e Trello **validada pelo usuário em 11/11/2026**, com capturas de tela do ADK Web e do quadro Trello. Os prints ainda precisam ser enviados à pasta `evidencias/` deste repositório.
+> **Estado atual:** integração real com Gemini e Trello **validada pelo usuário em 11/11/2026**, com capturas de tela do ADK Web e do quadro Trello. Os dois prints de execução estão publicados na pasta [`evidencias/`](evidencias/).
 
 ## Objetivo
 
@@ -20,7 +20,7 @@ Criar um agente conversacional capaz de perguntar quais são as tarefas do dia, 
 | `mudar_status_tarefa` | Move a tarefa entre **A fazer**, **Em andamento** e **Concluído**. |
 | `remover_tarefa` | Exclui um card após confirmação explícita do usuário. |
 
-O agente usa o modelo `gemini-2.5-flash` e registra as funções como ferramentas do Google ADK em `agenttaskmanager/agent.py`.
+O agente usa o modelo `gemini-3.8-flash` e registra as funções como ferramentas do Google ADK em `agenttaskmanager/agent.py`.
 
 ## Melhorias em relação ao exemplo original
 
@@ -119,7 +119,7 @@ Após testar no ambiente real, coloque prints em [`evidencias/`](evidencias/READ
 - Chat do `adk web` com criação/movimentação de tarefa.
 - Quadro Trello com o card aparecendo nas listas.
 
-**A execução real foi confirmada visualmente pelas capturas enviadas pelo usuário.** Falta apenas anexar os dois arquivos de imagem nesta pasta do GitHub. Evite incluir dados privados nos prints.
+**A execução real foi confirmada visualmente e as capturas estão publicadas:** [print do ADK Web](evidencias/image(20261111-233956).png) e [print do quadro Trello](evidencias/image(20261111-233941).png). Evite incluir dados privados nos prints.
 
 ## Arquivos do projeto
 
@@ -136,7 +136,9 @@ agente-ia-trello/
 ├── tests/
 │   └── test_funcoes.py
 └── evidencias/
-    └── README.md
+    ├── README.md
+    ├── image(20261111-233941).png
+    └── image(20261111-233956).png
 ```
 
 ## Referências
