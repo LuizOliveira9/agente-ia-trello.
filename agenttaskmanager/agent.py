@@ -187,7 +187,7 @@ def remover_tarefa(nome_da_task: str, confirmar: bool = False) -> dict:
 
 
 root_agent = Agent(
-    model='gemini-2.5-flash',
+    model='gemini-3.8-flash',
     name='root_agent',
     description='Assistente de tarefas em português integrado ao Trello.',
     instruction=(
